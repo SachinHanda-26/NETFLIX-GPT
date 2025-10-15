@@ -3,11 +3,35 @@
  - Create Vite app
  - Configured TailwindCSS
  - Header
+ - Routing of App
  - Login Form
+ - Sign Up Fomr
+ - Form Validation
+ - useRef Hook
+ - Firebase SetUp
+ - Deploying our app to production
+ - Create SignUp User Account
+ - Implement Sign In user Api
+ - Created Redux store with userSlice
+ - Implement Sign Out
+ - Update Profile
+ - Bug Fix: Sign up user dislayName and profile picture update
+ - BugFix: if the user is not logged in Redurect / browse to Login Page and vice-versa
+ - Unscribed to the onAuthStateChanged callback
+ - Add hardcoded values to the constants file
+ - Register TMDB API & create an app & getaccess token
+ - Get Data from TMDB now playing movies list API
+ - Custom Hook for Now Playing Movies
+ - Create moviesSlice
+ - Update store with movies Data
+ - Planning for MainContainer & Secondary Container
+ - Fetch Data for Trailer Video
+ - Update Store with Trailer Video Data
+ - Embedded the youtube video and make it autoplay and mute
+ - Tailwind Classes to make Main Container look awesome
+ 
 
-
-
-
+ 
 
  # Features
  - Login/Sign Up
