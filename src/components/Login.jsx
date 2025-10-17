@@ -7,7 +7,7 @@ import {auth} from "../utils/firebase"
 import { updateProfile } from "firebase/auth";
 import { useDispatch } from 'react-redux';
 import { addUser } from '../utils/userSlice';
-import { USER_AVATAR } from '../utils/constants';
+import { BG_URL, USER_AVATAR } from '../utils/constants';
 
 
 
@@ -98,7 +98,7 @@ const handleSignInForm = ()=>{
     <div>
         <Header/>
         <div className='absolute'>
-            <img src='https://assets.nflxext.com/ffe/siteui/vlv3/d482944d-eab4-4a64-89c9-a07a508a6e42/web/IN-en-20250929-TRIFECTA-perspective_4cf0c8a1-bd35-4d72-a49f-165021531dde_large.jpg' alt='background img'></img>
+            <img src={BG_URL} alt='background img'></img>
         </div>
 
     <form onSubmit={(e) => e.preventDefault()} className='absolute p-12 bg-black/80 w-4/12 mx-auto right-0 left-0 my-24 text-white bg-opacity-80'>
