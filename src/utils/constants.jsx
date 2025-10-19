@@ -19,3 +19,5 @@ export const SUPPORTED_LANGUAGES = [{identifier: "en", name: "English"}, {identi
 
 
 export const GenAI_KEY = import.meta.env.VITE_GenAI_KEY;
+
+export const FIREBASE_API_KEY = import.meta.env.VITE_FIREBASE_API_KEY
