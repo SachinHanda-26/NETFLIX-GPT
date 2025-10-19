@@ -23,7 +23,7 @@ const json = await data.json();
     }
 
     const handleGptSearchClick = async()=>{
-console.log(searchText.current.value);
+// console.log(searchText.current.value);
 
 // Make an API call to GPT API and get Movie Results
 
@@ -36,7 +36,7 @@ const genQuery = "Act as a Movie Recommendation system and suggest some movies f
   });
 
   
-  console.log(genResults.text);
+  // console.log(genResults.text);
   // 3 Idiots, Dangal, Bajrangi Bhaijaan, Dilwale Dulhania Le Jayenge, Lagaan
 
   const genMovies = genResults.text.split(",");
@@ -49,7 +49,7 @@ const genQuery = "Act as a Movie Recommendation system and suggest some movies f
   
   const tmdbResults = await Promise.all(promiseArray);
 
-  console.log(tmdbResults);
+  // console.log(tmdbResults);
 
   dispatch(addGenMovieResult({movieNames: genMovies, movieResults: tmdbResults}));
     }
