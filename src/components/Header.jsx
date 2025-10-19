@@ -67,7 +67,7 @@ return ()=> unsubscribe();
   return (
     <div className='absolute w-screen px-8 py-2 bg-gradient-to-b from-black z-10 flex justify-between'>
         
-        <img className='w-44' src={LOGO}></img>
+        <img className='-ml-5 md:-ml-0 w-30 md:w-44' src={LOGO}></img>
 
 
    { user && (<div className='flex gap-2 items-center'>
@@ -75,7 +75,7 @@ return ()=> unsubscribe();
 {
     showGptSearch && (
 
-  <select className='bg-black text-white px-2.5 py-2 rounded-lg' onChange={handlelangOptions}>
+  <select className='bg-black text-white text-sm md:text-lg px-1 md:px-2.5 py-1 md:py-2 rounded-lg' onChange={handlelangOptions}>
     {SUPPORTED_LANGUAGES.map(lang => <option key={lang.identifier} value={lang.identifier}>{lang.name}</option>)}
     
 </select>
@@ -87,10 +87,11 @@ return ()=> unsubscribe();
     <option value="hindi">Hindi</option>
     <option value="spanish">Spanish</option> */}
 
-    <button className='bg-purple-800 px-2.5 py-1 rounded-lg text-white cursor-pointer' onClick={handleGptSearchClick}>{showGptSearch ? "Home Page" : "GPT Search"}</button>
-      <img className='w-14' src = {user?.photoURL} alt='ProfileLogo'></img>
+    <button className='text-sm bg-purple-800 px-2.5 py-1 rounded-lg text-white cursor-pointer' onClick={handleGptSearchClick}>{showGptSearch ? "Home Page" : "GPT Search"}</button>
 
-      <button onClick={handleSignOut} className='font-bold text-white px-2 bg-red-600 rounded-lg h-8 cursor-pointer'>(Sign Out)</button>
+      <img className='hidden md:block w-14' src = {user?.photoURL} alt='ProfileLogo'></img>
+
+      <button onClick={handleSignOut} className='font-bold text-white text-sm md:text-lg px-0.5 md:px-2 bg-red-600 rounded-lg md:h-8 py-1 cursor-pointer'>(Sign Out)</button>
     </div>)
 }
 

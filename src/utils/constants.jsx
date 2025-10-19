@@ -7,7 +7,7 @@ export const API_OPTIONS = {
   method: 'GET',
   headers: {
     accept: 'application/json',
-    Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJkNzAzNWQwZmM5MjU1NjhiN2ZmZDI2YTFmMGQxYzgzZCIsIm5iZiI6MTc2MDAyODAwMS45NjgsInN1YiI6IjY4ZTdlNTYxZmYwMDMzMzAxYTRhOTY0MyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.nKlqZ0ML3MGrXZCtFauLzrttCCU72_4ico0vLyiNk-Q'
+    Authorization: 'Bearer '+import.meta.env.VITE_TMDB_API,
   }
 };
 
@@ -16,3 +16,6 @@ export const IMG_CDN_URL = "https://image.tmdb.org/t/p/w500/";
 export const BG_URL = "https://assets.nflxext.com/ffe/siteui/vlv3/d482944d-eab4-4a64-89c9-a07a508a6e42/web/IN-en-20250929-TRIFECTA-perspective_4cf0c8a1-bd35-4d72-a49f-165021531dde_large.jpg";
 
 export const SUPPORTED_LANGUAGES = [{identifier: "en", name: "English"}, {identifier: "hindi", name: "Hindi"}, {identifier: "spanish", name: "Spanish"}];
+
+
+export const GenAI_KEY = import.meta.env.VITE_GenAI_KEY;

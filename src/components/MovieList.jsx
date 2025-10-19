@@ -4,10 +4,10 @@ const MovieList = ({title, movies}) => {
     console.log(movies);
   return (
   movies && (
-    <div className='px-6 bg-black'>
+    <div className='px-6'>
 
-        <h1 className='text-3xl py-4 text-white'>{title}</h1>
-    <div className='flex overflow-x-scroll'>
+        <h1 className='text-xl md:text-3xl py-4 text-white'>{title}</h1>
+    <div className='flex overflow-x-scroll scrollbar-hide space-x-4'>
 
         <div className='flex gap-3'>
 
